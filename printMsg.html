@@ -1,0 +1,25 @@
+  <!--Accept a number and message from a user and print that message that many no of times-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment2</title>
+        <script>
+            function printMessage(){
+                var no = parseInt(document.getElementById("num1").value)
+                var msg = document.getElementById("msg").value
+                for(var i=1; i<=no; i++){
+                    document.getElementById("meradiv").innerHTML+=(document.getElementById("msg").value)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Enter a number: <input type="text" name="number" id="num1" placeholder="number">
+            Enter a message: <input type="text" name="mesg" id="msg" placeholder="message">
+            <button type="button" name="submit" id="submit" onclick="printMessage()">SUBMIT</button>
+        </form>
+        <div id="meradiv"></div>
+    </body>
+</html>
