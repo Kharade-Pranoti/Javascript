@@ -1,0 +1,45 @@
+<!--Write a program to accept three positive numbers and output the largest of them-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Find largest no
+        </title>
+        <script>
+            function largestNo(){
+                var n1 = parseInt(document.getElementById("num1").value)
+                var n2 = parseInt(document.getElementById("num2").value)
+                var n3 = parseInt(document.getElementById("num3").value)
+                var largest
+                if((n1>n2) && (n1>n3)){
+                    largest = n1
+                }else if((n2>n3) && (n2>n1)){
+                    largest = n2
+                }else{
+                    largest = n3
+                }
+              // to print the output/result inside the result text box
+                document.getElementById("result").value+=largest
+              
+              // or we can also print value below the form using div
+           // document.getElementById("mydiv").innerHTML+=largest
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+        First Number: <input type="text" name="first no" id="num1" placeholder="Enter no 1">
+        <br>
+        Second Number: <input type="text" name="second no" id="num2" placeholder="Enter no 2">
+        <br>
+        Third Number: <input type="text" name="third no" id="num3" placeholder="Enter no 3">
+        <br>
+          // make the result text box readonly so that user can't enter any value into it - it just to display the result
+       Result: <input type="text" name="result" id="result" readonly>
+        <br>
+        <button type="button" name="largest" id="largest" onclick="largestNo()">Largest No</button>
+    </form>
+   <!-- <div id="mydiv"></div>-->
+    </body>
+</html>
