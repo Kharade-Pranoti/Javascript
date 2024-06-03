@@ -1,0 +1,29 @@
+<!--Write a function to list all even numbers less than or equal to the number n.
+Take the value of n as input from user. Use while loop-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <script>
+            function listEvenNumbers(){
+                var number = parseInt(document.getElementById("num").value)
+                var i=1
+                while(i <= number){
+                    if(i%2==0){
+                        document.getElementById("mydiv").innerHTML+=i+" "
+                    }
+                    i++
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <form>
+        Enter a number: <input type="text" name="number" id="num" placeholder="Number">
+        <button type="button" name="btn" id="submit" onclick="listEvenNumbers()">Submit</button>
+        </form>
+        <div id="mydiv"></div>
+    </body>
+</html>
