@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compound Interest</title>
+        <script>
+            function compoundInterest(){
+                var p = parseInt(document.getElementById("principal").value)
+                var r = parseInt(document.getElementById("rate").value)
+                var y = parseInt(document.getElementById("years").value)
+
+                 var c = ((p * (1 + (r/100)**y)) - p);
+            
+                document.getElementById("compound").value=c
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+        <h1>Calculate Compound Interest</h1>
+        Principal: <input type="text" name="pri" id="principal">
+        Rate Of Interest: <input type="text" name="rate" id="rate">
+        Period Of Years: <input type="text" name="years" id="years">
+        Compound Interest: <input type="text" name="ci" id="compound" readonly>
+        <button type="button" name="btn" id="submit" onclick="compoundInterest()">SUBMIT</button>
+    </form>
+    
+      
+    </body>
+</html>
