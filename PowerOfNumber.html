@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function operation(){
+            var p = parseInt(document.getElementById("power").value)
+            var n = parseInt(document.getElementById("num").value)
+            document.getElementById("mydiv").innerHTML=(n**p)
+
+        }
+    </script>
+</head>
+<body>
+    number: <input type="text" name="num" id="num">
+    power: <input type="text" name="power" id="power">
+    <button type="button" name="but" id="pbut" onclick="operation()">Execute</button>
+   <div id="mydiv"></div>
+</body>
+</html>
