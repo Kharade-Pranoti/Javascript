@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function areaCircum(){
+            var r = parseInt(document.getElementById("radius").value)
+            var area = (3.14 * r * r)
+            var circumference = (2 * 3.14 * r)
+            document.getElementById("mydiv").innerHTML+="Area: " + area
+          document.getElementById("meradiv").innerHTML+="Circumference: " +   parseInt(circumference)
+        }
+    </script>
+</head>
+<body>
+    <form>
+    Enter Radius: <input text="text" name="radius" id="radius">
+    <button type="button" name="btn" id="button" onclick="areaCircum()">Display</button>
+    </form>
+    <div id="mydiv"></div>
+    <br>
+    <div id="meradiv"></div>
+</body>
+</html>
