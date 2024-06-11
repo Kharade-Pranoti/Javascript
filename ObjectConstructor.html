@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create object using constructor
+        function person1(first_name, last_name){
+            this.first_name = first_name;
+            this.last_name = last_name;
+        }
+
+        // create new instances of person1 object
+        let obj1 = new person1("Mahi", "Singh");
+        let obj2 = new person1("Yuvi", "Singh");
+
+        // print the values of obj1 and obj2 into the console
+        console.log(obj1.first_name);
+        console.log(`${obj2.first_name} ${obj2.last_name}`);
+    </script>
+</body>
+</html>
