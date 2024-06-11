@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// create an object by using Object Literal
+        // defining object
+        let person = {
+            // properties
+            first_name : "Mukul",
+            last_name : "Yadav",
+
+            // method
+            getFunction : function(){
+                return (`The name of the person is {$person.first_name} {$person.last_name}`);
+            },
+
+            // object within object
+            person2 : {
+                phn : 2345,
+                address : "maharashtra"
+            }
+        }
+
+        console.log(person.first_name);
+        console.log(person.person2.phn);
+        console.log(person.person2.address);
+    </script>
+</body>
+</html>
